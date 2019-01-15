@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.huaneng.zhdj">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <!-- 外置存储存取权限 -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <!-- 极光推送 -->
+    <uses-permission android:name="com.huaneng.zhdj.permission.JPUSH_MESSAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:name=".App"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".WebViewActivity" />
+        <activity android:name=".FileWebViewActivity" />
+        <activity
+            android:name=".MainActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".LoginActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/NoTitleFullscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SplashActivity"
+            android:theme="@style/NoTitleFullscreen" />
+        <activity
+            android:name=".SlidingMenuActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/AppTheme" />
+        <!-- 极光推送 -->
+        <receiver
+            android:name=".utils.JPushReceiver"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTRATION" />
+                <action android:name="cn.jpush.android.intent.MESSAGE_RECEIVED" />
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED" />
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_OPENED" />
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_CLICK_ACTION" />
+                <action android:name="cn.jpush.android.intent.CONNECTION" />
+
+                <category android:name="com.huaneng.zhdj" />
+            </intent-filter>
+        </receiver>
+
+        <activity android:name=".news.NewsActivity" />
+        <activity android:name=".news.NewsDetailActivity" />
+        <activity android:name=".study.ExamCenterActivity" />
+        <activity android:name=".study.MobileClassroomActivity" />
+        <activity android:name=".study.SpecialSubjectAttachmentsActivity" />
+        <activity android:name=".study.SpecialSubjectDetailActivity" />
+        <activity android:name=".study.StudyNoteActivity" />
+        <activity android:name=".study.StudyNoteDetailActivity" />
+        <activity android:name=".study.StudyNotePublishActivity" />
+        <activity android:name=".study.ExamActivity" />
+        <activity android:name=".study.ExamResultActivity" />
+        <activity android:name=".pioneers.PioneersDetailActivity" />
+        <activity android:name=".pioneers.PioneersWorksDetailActivity"/>
+        <activity android:name=".pioneers.PioneersWorksPublishActivity" />
+        <activity android:name=".work.PartyOfficeActivity"></activity>
+        <activity android:name=".work.PartyWorkActivity"></activity>
+        <activity android:name=".work.PartyWorkDetailActivity"></activity>
+        <activity android:name=".work.PartyMeetingActivity"></activity>
+        <activity android:name=".work.PartyActivityActivity"></activity>
+        <activity android:name=".work.PartyMeetingDetailActivity"></activity>
+        <activity android:name=".work.PartyActivityDetailActivity"></activity>
+        <activity android:name=".work.PartyJoinActivity"></activity>
+        <activity android:name=".work.PartyJoinDetailActivity"></activity>
+        <activity android:name=".work.PartyDuesActivity"></activity>
+        <activity android:name=".work.TimetableActivity"></activity>
+        <activity android:name=".work.PartyJoinApplyActivity"></activity>
+        <activity android:name=".work.MindReportActivity"></activity>
+        <activity android:name=".work.PartyRegulationActivity"></activity>
+        <activity android:name=".work.OrganActivity"></activity>
+        <activity android:name=".work.PartyWorkAddActivity"></activity>
+        <activity android:name=".work.QRCodeActivity"></activity>
+        <activity android:name=".supervise.PeopleInteractActivity"></activity>
+        <activity android:name=".supervise.AccusationActivity"></activity>
+        <activity android:name=".supervise.QuestionDetailActivity"></activity>
+        <activity android:name=".supervise.QuestionSubmitActivity"></activity>
+        <activity android:name=".supervise.QuestionAnswerListActivity"></activity>
+        <activity android:name=".supervise.QuestionAnswerActivity"></activity>
+        <activity android:name=".supervise.VoteActivity"></activity>
+        <activity android:name=".supervise.VoteResultActivity"></activity>
+        <activity android:name=".supervise.VoteCreateActivity" android:windowSoftInputMode="stateUnchanged"></activity>
+        <activity android:name=".supervise.VoteManageActivity"></activity>
+        <activity android:name=".supervise.VoteAmendActivity"></activity>
+        <activity android:name=".supervise.VoteRecordActivity"></activity>
+        <activity android:name=".supervise.SurveyActivity"></activity>
+        <activity android:name=".supervise.SurveyRecordActivity"></activity>
+        <activity android:name=".supervise.PartyPublicDetailActivity"></activity>
+        <activity android:name=".supervise.DisciplineSuperviseDetailActivity"></activity>
+        <activity android:name=".user.UserInfoActivity"></activity>
+        <activity android:name=".user.ForgotPasswdActivity"></activity>
+        <activity android:name=".user.RegiterActivity"></activity>
+        <activity android:name=".user.UpdatePasswdActivity"></activity>
+        <activity android:name=".user.PartyMemberRelationActivity"></activity>
+        <activity android:name=".user.ScoreActivity"></activity>
+        <activity android:name=".user.MessageActivity"></activity>
+        <activity android:name=".user.UserInfoUpdateActivity"></activity>
+        <activity android:name=".PDFViewActivity"></activity>
+        <activity android:name=".TxtViewActivity"></activity>
+        <activity android:name=".OfficeActivity"></activity>
+
+        <activity android:name=".VideoPlayVerticalActivity"></activity>
+        <activity
+            android:name=".VideoPlayActivity"
+            android:theme="@style/NoTitleFullscreen"
+            android:screenOrientation="landscape"/>
+        <activity android:name=".FileDisplayActivity"></activity>
+
+        <activity android:name="me.iwf.photopicker.PhotoPickerActivity"
+                  android:theme="@style/Theme.AppCompat.NoActionBar" />
+
+        <activity android:name="me.iwf.photopicker.PhotoPagerActivity"
+                  android:theme="@style/Theme.AppCompat.NoActionBar"/>
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.huaneng.zhdj.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths"/>
+        </provider>
+    </application>
+
+</manifest>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/item_menu_bg"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:id="@+id/titleLy"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/titleTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="2"
+            android:layout_marginRight="50dp"
+            android:textColor="@color/primaryTextColor"
+            android:textSize="@dimen/largeTextSize"
+            tools:text="标题标题标题标题"/>
+
+        <TextView
+            android:id="@+id/timeTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/titleTv"
+            android:layout_alignParentBottom="true"
+            android:textColor="@color/gray_999"
+            android:textSize="@dimen/smallTextSize"
+            tools:text="2017-12-28 23:20"/>
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/navigate_next"/>
+
+        <TextView
+            android:id="@+id/statusTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/icon"
+            android:layout_marginRight="20dp"
+            android:layout_alignParentBottom="true"
+            android:textColor="@color/gray_999"
+            android:textSize="@dimen/smallTextSize"/>
+    </RelativeLayout>
+</LinearLayout>

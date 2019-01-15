@@ -1,0 +1,152 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:background="@color/activity_bg"
+              android:orientation="vertical">
+
+    <include layout="@layout/toolbar_layout" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="right"
+        android:padding="10dp">
+
+        <TextView
+            android:text="已读搁置"
+            android:textSize="@dimen/mediumTextSize"
+            android:clickable="true"
+            android:onClick="suspend"
+            android:textColor="@color/blue"
+            android:layout_marginRight="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:text="弃置"
+            android:clickable="true"
+            android:onClick="abandon"
+            android:textSize="@dimen/mediumTextSize"
+            android:textColor="@color/red"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp">
+
+        <TextView
+            android:id="@+id/nameTv"
+            android:text="提问人："
+            android:layout_marginRight="10dp"
+            android:textSize="@dimen/smallTextSize"
+            android:textColor="@color/primaryTextColor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:text="求问对象："
+            android:id="@+id/organTv"
+            android:gravity="center"
+            android:layout_marginRight="10dp"
+            android:textSize="@dimen/smallTextSize"
+            android:textColor="@color/primaryTextColor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:text="2017/10/10 10:01"
+            android:id="@+id/timeTv"
+            android:textSize="@dimen/smallTextSize"
+            android:textColor="@color/primaryTextColor"
+            android:gravity="right"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <TextView
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:text="问题内容"
+        android:textSize="@dimen/mediumTextSize"
+        android:textColor="@color/primaryTextColor"
+        android:background="@color/ddd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/questionContentTv"
+        tools:text="内容"
+        android:minLines="5"
+        android:layout_margin="10dp"
+        android:padding="5dp"
+        android:textColor="@color/primaryTextColor"
+        android:textSize="@dimen/mediumTextSize"
+        android:background="@drawable/shape_white_round_border"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:text="回复内容"
+        android:textSize="@dimen/mediumTextSize"
+        android:textColor="@color/primaryTextColor"
+        android:background="@color/ddd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/answerTv"
+        tools:text="内容"
+        android:layout_margin="10dp"
+        android:padding="5dp"
+        android:minLines="5"
+        android:gravity="top"
+        android:textColor="@color/primaryTextColor"
+        android:textSize="@dimen/mediumTextSize"
+        android:background="@drawable/shape_white_round_border"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:padding="10dp">
+
+        <Button
+            android:id="@+id/cancelBtn"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="40dp"
+            android:background="@drawable/btn_color_primary"
+            android:onClick="cancel"
+            android:text="取消"
+            android:layout_marginRight="20dp"
+            android:textColor="@color/gray_555"
+            android:textSize="@dimen/mediumTextSize" />
+
+        <Button
+            android:id="@+id/submitBtn"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="40dp"
+            android:background="@drawable/btn_color_blue"
+            android:onClick="submit"
+            android:text="答复"
+            android:textColor="@color/white"
+            android:textSize="@dimen/mediumTextSize" />
+    </LinearLayout>
+
+</LinearLayout>

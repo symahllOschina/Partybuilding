@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:id="@+id/group1">
+        <item
+            android:id="@+id/partyMemberInfo"
+            android:icon="@drawable/my_info"
+            android:actionLayout="@layout/sliding_menu_item"
+            android:title="个人基本信息"/>
+    </group>
+    <group android:id="@+id/group2">
+        <item
+            android:id="@+id/partyMemberRelation"
+            android:icon="@drawable/zhaunru"
+            android:title="转入转出记录"/>
+    </group>
+    <group android:id="@+id/group3">
+        <item
+            android:id="@+id/personalScore"
+            android:icon="@drawable/jifen"
+            android:title="积分获取记录"/>
+    </group>
+    <group android:id="@+id/group4">
+        <item
+            android:id="@+id/message"
+            android:icon="@drawable/message"
+            android:title="消息中心"/>
+    </group>
+    <group android:id="@+id/group5">
+        <item
+            android:id="@+id/exit"
+            android:icon="@drawable/out"
+            android:title="退出"/>
+    </group>
+</menu>

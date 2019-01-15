@@ -1,0 +1,97 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_bg"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_layout" />
+
+    <EditText
+        android:id="@+id/titleEt"
+        android:background="@drawable/shape_white_round_border"
+        android:maxLines="1"
+        android:padding="10dp"
+        android:maxLength="30"
+        android:hint="请输入标题"
+        android:textColor="@color/primaryTextColor"
+        android:textSize="@dimen/mediumTextSize"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/descriptionEt"
+        android:background="@drawable/shape_white_round_border"
+        android:minLines="10"
+        android:padding="10dp"
+        android:maxLength="1000"
+        android:hint="思想内容主体"
+        android:gravity="top"
+        android:textColor="@color/primaryTextColor"
+        android:textSize="@dimen/mediumTextSize"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.huaneng.zhdj.view.NineGridlayout
+        android:layout_marginTop="10dp"
+        android:id="@+id/nineGridlayout"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content" />
+
+    <com.huaneng.zhdj.view.FlowRadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <RadioButton
+            android:id="@+id/type1"
+            android:text="日常工作总结"
+            android:tag="2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <RadioButton
+            android:id="@+id/type2"
+            android:text="工作记录描述"
+            android:tag="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <RadioButton
+            android:id="@+id/type3"
+            android:text="日常职工思想汇报"
+            android:tag="4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <RadioButton
+            android:id="@+id/type4"
+            android:text="年度工作总结"
+            android:tag="3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <RadioButton
+            android:id="@+id/type5"
+            android:text="日常党员思汇"
+            android:tag="5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <RadioButton
+            android:id="@+id/type6"
+            android:text="年度党员思汇"
+            android:tag="6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </com.huaneng.zhdj.view.FlowRadioGroup>
+
+</LinearLayout>

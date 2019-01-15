@@ -1,0 +1,44 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:paddingBottom="10dp"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/titleTv"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/primaryTextColor"
+        android:textSize="@dimen/mediumTextSize"
+        tools:text="标题" />
+
+    <TextView
+        android:id="@+id/ticketLabel"
+        android:text="票"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:textColor="@color/primaryTextColor"
+        android:textSize="@dimen/mediumTextSize"
+        android:layout_marginRight="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/ticketCountEt"
+        android:layout_width="40dp"
+        android:layout_toLeftOf="@id/ticketLabel"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/shape_white_border"
+        android:gravity="center"
+        android:padding="5dp"
+        android:maxLength="10"
+        android:textColor="@color/primaryTextColor"
+        android:textSize="@dimen/mediumTextSize"
+        tools:text="4"/>
+
+</RelativeLayout>

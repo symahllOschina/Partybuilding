@@ -1,0 +1,181 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_bg"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_layout" />
+
+    <TextView
+        android:padding="10dp"
+        android:layout_gravity="center"
+        android:text="被举报人信息"
+        android:textSize="@dimen/mediumTextSize"
+        android:textColor="@color/primaryTextColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <TextView
+            android:text="姓    名："
+            android:layout_marginRight="10dp"
+            android:textSize="@dimen/mediumTextSize"
+            android:textColor="@color/primaryTextColor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/nameEt"
+            android:background="@drawable/shape_white_round_border"
+            android:maxLines="1"
+            android:padding="6dp"
+            android:maxLength="30"
+            android:textColor="@color/primaryTextColor"
+            android:textSize="@dimen/mediumTextSize"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:text="职    务："
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textSize="@dimen/mediumTextSize"
+            android:textColor="@color/primaryTextColor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/jobEt"
+            android:background="@drawable/shape_white_round_border"
+            android:maxLines="1"
+            android:padding="6dp"
+            android:maxLength="30"
+            android:textColor="@color/primaryTextColor"
+            android:textSize="@dimen/mediumTextSize"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <TextView
+            android:text="问题标题："
+            android:layout_marginRight="10dp"
+            android:textSize="@dimen/mediumTextSize"
+            android:textColor="@color/primaryTextColor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/titleEt"
+            android:background="@drawable/shape_white_round_border"
+            android:maxLines="1"
+            android:padding="6dp"
+            android:maxLength="30"
+            android:textColor="@color/primaryTextColor"
+            android:textSize="@dimen/mediumTextSize"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <TextView
+            android:text="问题类别："
+            android:layout_marginRight="10dp"
+            android:textSize="@dimen/mediumTextSize"
+            android:textColor="@color/primaryTextColor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:hint="请选择"
+            android:id="@+id/typeTv"
+            android:background="@drawable/shape_white_round_border"
+            android:drawableRight="@drawable/ic_arrow_down"
+            android:padding="6dp"
+            android:textColor="@color/primaryTextColor"
+            android:textSize="@dimen/mediumTextSize"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <TextView
+            android:text="问题细类："
+            android:layout_marginRight="10dp"
+            android:textSize="@dimen/mediumTextSize"
+            android:textColor="@color/primaryTextColor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:hint="请选择"
+            android:id="@+id/detailTv"
+            android:background="@drawable/shape_white_round_border"
+            android:padding="6dp"
+            android:textColor="@color/primaryTextColor"
+            android:textSize="@dimen/mediumTextSize"
+            android:drawableRight="@drawable/ic_arrow_down"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <TextView
+        android:padding="10dp"
+        android:text="问题描述"
+        android:textSize="@dimen/mediumTextSize"
+        android:textColor="@color/primaryTextColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/descriptionEt"
+        android:background="@drawable/shape_white_round_border"
+        android:minLines="3"
+        android:padding="10dp"
+        android:maxLength="1000"
+        android:gravity="top"
+        android:textColor="@color/primaryTextColor"
+        android:textSize="@dimen/mediumTextSize"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.huaneng.zhdj.view.NineGridlayout
+        android:layout_marginTop="10dp"
+        android:id="@+id/nineGridlayout"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content" />
+
+</LinearLayout>

@@ -1,0 +1,110 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_bg"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_layout" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="原密码"
+            android:textColor="@color/primaryTextColor"
+            android:textSize="@dimen/mediumTextSize" />
+
+        <EditText
+            android:id="@+id/passwdEt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:background="@drawable/shape_white_round_border"
+            android:padding="5dp"
+            android:maxLength="20"
+            android:inputType="textPassword"
+            android:textColor="@color/primaryTextColor"
+            android:textSize="@dimen/mediumTextSize" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="新密码"
+            android:textColor="@color/primaryTextColor"
+            android:textSize="@dimen/mediumTextSize" />
+
+        <EditText
+            android:id="@+id/newPasswdEt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:background="@drawable/shape_white_round_border"
+            android:padding="5dp"
+            android:maxLength="20"
+            android:inputType="textPassword"
+            android:textColor="@color/primaryTextColor"
+            android:textSize="@dimen/mediumTextSize" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="确认新密码"
+            android:textColor="@color/primaryTextColor"
+            android:textSize="@dimen/mediumTextSize" />
+
+        <EditText
+            android:id="@+id/newPasswdConfirmEt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:maxLength="20"
+            android:inputType="textPassword"
+            android:background="@drawable/shape_white_round_border"
+            android:padding="5dp"
+            android:textColor="@color/primaryTextColor"
+            android:textSize="@dimen/mediumTextSize" />
+    </LinearLayout>
+
+    <CheckBox
+        android:id="@+id/updateSecretAnswerCb"
+        android:text="同时修改密保"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/submitBtn"
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/selector_btn_red"
+        android:onClick="submit"
+        android:text="提交"
+        android:textColor="@color/white"
+        android:textSize="@dimen/mediumTextSize" />
+
+</LinearLayout>

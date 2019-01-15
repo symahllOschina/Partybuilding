@@ -1,0 +1,111 @@
+<com.scwang.smartrefresh.layout.SmartRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/refreshLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/activity_bg"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <com.youth.banner.Banner
+                android:id="@+id/banner"
+                android:layout_width="match_parent"
+                android:visibility="gone"
+                android:layout_height="@dimen/banner_height"
+                app:image_scale_type="fit_xy" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/mapTv"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:drawableTop="@drawable/dangjianditu"
+                    android:drawablePadding="5dp"
+                    android:gravity="center"
+                    android:text="党建地图"
+                    android:textColor="@color/primaryTextColor"
+                    android:textSize="@dimen/smallTextSize" />
+
+                <TextView
+                    android:id="@+id/partyPublicTv"
+                    android:tag="0"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:drawableTop="@drawable/dangwugongkai"
+                    android:drawablePadding="5dp"
+                    android:gravity="center"
+                    android:text="党务公开"
+                    android:textColor="@color/primaryTextColor"
+                    android:textSize="@dimen/smallTextSize"  />
+
+                <TextView
+                    android:id="@+id/peopleInteractTv"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:drawableTop="@drawable/zhengminhudong"
+                    android:drawablePadding="5dp"
+                    android:gravity="center"
+                    android:text="互动空间"
+                    android:textColor="@color/primaryTextColor"
+                    android:textSize="@dimen/smallTextSize" />
+
+                <TextView
+                    android:id="@+id/disciplineSuperviseTv"
+                    android:tag="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:drawableTop="@drawable/jilvjiandu"
+                    android:drawablePadding="5dp"
+                    android:gravity="center"
+                    android:text="纪律监督"
+                    android:textColor="@color/primaryTextColor"
+                    android:textSize="@dimen/smallTextSize" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/accusationTv"
+                android:clickable="true"
+                android:paddingRight="10dp"
+                android:layout_gravity="right"
+                android:text="我要举报"
+                android:textSize="@dimen/mediumTextSize"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:textColor="@color/blue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <FrameLayout
+                android:id="@+id/content_frame"
+                android:layout_width="match_parent"
+                android:descendantFocusability="blocksDescendants"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+    </ScrollView>
+</com.scwang.smartrefresh.layout.SmartRefreshLayout>

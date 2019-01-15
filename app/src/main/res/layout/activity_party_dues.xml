@@ -1,0 +1,98 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_layout"/>
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/refreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:text="起止月份"
+                    android:textColor="@color/primaryTextColor"
+                    android:textSize="@dimen/mediumTextSize"/>
+
+                <TextView
+                    android:id="@+id/startDateTv"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_white_round_border"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:textColor="@color/primaryTextColor"
+                    android:textSize="@dimen/mediumTextSize"
+                    tools:text="201801"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="~"
+                    android:textColor="@color/primaryTextColor"
+                    android:textSize="@dimen/mediumTextSize"/>
+
+                <TextView
+                    android:id="@+id/endDateTv"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_white_round_border"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:textColor="@color/primaryTextColor"
+                    android:textSize="@dimen/mediumTextSize"
+                    tools:text="201803"/>
+
+                <Button
+                    android:id="@+id/searchBtn"
+                    android:layout_width="70dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/selector_btn_blue"
+                    android:onClick="search"
+                    android:text="查看"
+                    android:textColor="@color/white"/>
+            </LinearLayout>
+
+            <ListView
+                android:id="@+id/listView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:dividerHeight="1px"
+                android:listSelector="@null"
+                android:scrollbars="none"
+                android:visibility="gone"/>
+
+            <com.huaneng.zhdj.view.EmptyView
+                android:id="@+id/emptyView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+</LinearLayout>

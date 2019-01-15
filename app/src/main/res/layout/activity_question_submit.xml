@@ -1,0 +1,143 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:background="@color/activity_bg"
+              android:orientation="vertical">
+
+    <include layout="@layout/toolbar_layout" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <TextView
+            android:text="问题标题："
+            android:textSize="@dimen/mediumTextSize"
+            android:textColor="@color/primaryTextColor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/titleTv"
+            tools:text="标题"
+            android:padding="5dp"
+            android:textColor="@color/primaryTextColor"
+            android:textSize="@dimen/mediumTextSize"
+            android:background="@drawable/shape_white_round_border"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <TextView
+            android:text="部门名称："
+            android:textSize="@dimen/mediumTextSize"
+            android:textColor="@color/primaryTextColor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:hint="请选择"
+            android:id="@+id/organTv"
+            android:background="@drawable/shape_white_round_border"
+            android:drawableRight="@drawable/ic_arrow_down"
+            android:padding="6dp"
+            android:clickable="true"
+            android:onClick="organSelect"
+            android:textColor="@color/primaryTextColor"
+            android:textSize="@dimen/mediumTextSize"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+
+        <CheckBox
+            android:textSize="@dimen/smallTextSize"
+            android:textColor="@color/primaryTextColor"
+            android:text="我不知道部门"
+            android:id="@+id/noOrganCkb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <TextView
+            android:text="提交信息："
+            android:textSize="@dimen/mediumTextSize"
+            android:textColor="@color/primaryTextColor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/contentTv"
+                tools:text="信息"
+                android:padding="5dp"
+                android:minLines="12"
+                android:gravity="top"
+                android:maxLength="500"
+                android:textColor="@color/primaryTextColor"
+                android:textSize="@dimen/mediumTextSize"
+                android:background="@drawable/shape_white_round_border"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/limitTv"
+                android:layout_marginTop="5dp"
+                android:text="注：请不要超过500字。(0/500)"
+                android:textSize="@dimen/mediumTextSize"
+                android:textColor="@color/primaryTextColor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:padding="10dp">
+
+        <Button
+            android:id="@+id/cancelBtn"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="40dp"
+            android:background="@drawable/btn_color_primary"
+            android:onClick="cancel"
+            android:text="取消"
+            android:layout_marginRight="20dp"
+            android:textColor="@color/gray_555"
+            android:textSize="@dimen/mediumTextSize" />
+
+        <Button
+            android:id="@+id/submitBtn"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="40dp"
+            android:background="@drawable/btn_color_blue"
+            android:onClick="submit"
+            android:text="提交"
+            android:textColor="@color/white"
+            android:textSize="@dimen/mediumTextSize" />
+    </LinearLayout>
+
+</LinearLayout>

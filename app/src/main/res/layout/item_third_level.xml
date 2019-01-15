@@ -1,0 +1,22 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:divider="@drawable/linearlayout_divider"
+    android:showDividers="beginning|middle|end"
+    android:gravity="center_vertical"
+    android:background="@color/ddd"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/node_name_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_marginLeft="40dp"
+        android:drawableRight="@drawable/navigate_next"
+        android:textColor="@color/primaryTextColor"
+        android:textSize="@dimen/mediumTextSize"
+        tools:text="主题" />
+
+</LinearLayout>

@@ -1,0 +1,85 @@
+<com.scwang.smartrefresh.layout.SmartRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/refreshLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/activity_bg"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <EditText
+                android:id="@+id/keywordsTv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/shape_white_round_border"
+                android:padding="5dp"
+                android:textColor="@color/primaryTextColor"
+                android:textSize="@dimen/mediumTextSize"
+                tools:text="关键字"/>
+
+            <Button
+                android:id="@+id/searchBtn"
+                android:layout_width="70dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/selector_btn_blue"
+                android:text="关键字搜索"
+                android:textColor="@color/white"
+                android:textSize="@dimen/smallTextSize"/>
+
+            <Button
+                android:id="@+id/answerBtn"
+                android:layout_width="70dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/selector_btn_blue"
+                android:text="我要批复"
+                android:textColor="@color/white"
+                android:textSize="@dimen/smallTextSize"/>
+
+            <Button
+                android:id="@+id/askBtn"
+                android:layout_width="70dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/selector_btn_blue"
+                android:text="我要提问"
+                android:textColor="@color/white"
+                android:textSize="@dimen/smallTextSize"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ListView
+                android:id="@+id/listView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@null"
+                android:listSelector="@null"
+                android:scrollbars="none"
+                android:visibility="gone"/>
+
+            <com.huaneng.zhdj.view.EmptyView
+                android:id="@+id/emptyView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+    </LinearLayout>
+</com.scwang.smartrefresh.layout.SmartRefreshLayout>

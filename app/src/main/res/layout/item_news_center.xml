@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="@drawable/item_menu_bg">
+
+    <FrameLayout
+        android:id="@+id/iconBox"
+        android:layout_width="120dp"
+        android:layout_height="70dp"
+        android:layout_margin="5dp">
+        <ImageView
+            android:id="@+id/iconIv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/news_1"/>
+
+        <TextView
+            android:id="@+id/typeTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:textSize="@dimen/mediumTextSize"
+            tools:text="热点新闻"/>
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/titleLy"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TextView
+            android:id="@+id/titleTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="2"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/largeTextSize"
+            tools:text="标题标题标题标题"/>
+
+        <TextView
+            android:id="@+id/timeTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/gray_999"
+            android:layout_alignParentBottom="true"
+            android:textSize="@dimen/smallTextSize"
+            tools:text="2017-12-28 23:20"/>
+
+        <TextView
+            android:id="@+id/countTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/gray_999"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:textSize="@dimen/smallTextSize"
+            tools:text="阅读：23次"/>
+    </RelativeLayout>
+</LinearLayout>

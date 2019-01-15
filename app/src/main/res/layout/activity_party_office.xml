@@ -1,0 +1,54 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_bg"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_layout"/>
+
+    <TextView
+        android:id="@+id/workTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/white_gray_top_bottom"
+        android:padding="10dp"
+        android:drawablePadding="15dp"
+        android:drawableLeft="@drawable/ic_work"
+        android:drawableRight="@drawable/navigate_next"
+        android:gravity="center_vertical"
+        android:text="工作"
+        android:textColor="@color/gray_555"
+        android:textSize="@dimen/mediumTextSize" />
+
+    <TextView
+        android:id="@+id/meetingTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/white_gray_top_bottom"
+        android:padding="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:drawablePadding="15dp"
+        android:drawableLeft="@drawable/ic_meeting"
+        android:drawableRight="@drawable/navigate_next"
+        android:gravity="center_vertical"
+        android:text="会议"
+        android:textColor="@color/gray_555"
+        android:textSize="@dimen/mediumTextSize" />
+
+    <TextView
+        android:id="@+id/activityTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/white_gray_top_bottom"
+        android:padding="10dp"
+        android:drawablePadding="15dp"
+        android:drawableLeft="@drawable/ic_activity"
+        android:drawableRight="@drawable/navigate_next"
+        android:gravity="center_vertical"
+        android:text="活动"
+        android:textColor="@color/gray_555"
+        android:textSize="@dimen/mediumTextSize" />
+
+</LinearLayout>

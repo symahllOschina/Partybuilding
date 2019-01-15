@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/item_menu_bg"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/nameTv"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_height="35dp"
+        android:textColor="@color/primaryTextColor"
+        android:background="@drawable/white_bg_gray_left"
+        android:textSize="@dimen/mediumTextSize"
+        tools:text="张三" />
+
+    <TextView
+        android:id="@+id/optionTv"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_height="35dp"
+        android:textColor="@color/primaryTextColor"
+        android:background="@drawable/white_bg_gray_left"
+        android:textSize="@dimen/mediumTextSize"
+        tools:text="2" />
+
+    <TextView
+        android:id="@+id/timeTv"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_height="35dp"
+        android:textColor="@color/primaryTextColor"
+        android:background="@drawable/white_bg_gray_left"
+        android:textSize="@dimen/mediumTextSize"
+        tools:text="2018-3-9" />
+
+
+</LinearLayout>

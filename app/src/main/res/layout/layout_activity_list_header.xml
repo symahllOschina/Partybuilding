@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="2"
+        android:layout_height="40dp"
+        android:textColor="@color/primaryTextColor"
+        android:gravity="center"
+        android:textSize="@dimen/mediumTextSize"
+        android:textStyle="bold"
+        android:text="活动名称" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:background="@drawable/white_bg_gray_left"
+        android:layout_height="match_parent"
+        android:textColor="@color/gray_555"
+        android:textSize="@dimen/mediumTextSize"
+        android:textStyle="bold"
+        android:text="组织机构" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="1.2"
+        android:gravity="center"
+        android:background="@drawable/white_bg_gray_left"
+        android:layout_height="match_parent"
+        android:textColor="@color/gray_555"
+        android:textSize="@dimen/mediumTextSize"
+        android:textStyle="bold"
+        android:text="时间" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:background="@drawable/white_bg_gray_left"
+        android:layout_height="match_parent"
+        android:textColor="@color/gray_555"
+        android:textSize="@dimen/mediumTextSize"
+        android:textStyle="bold"
+        android:text="状态" />
+</LinearLayout>

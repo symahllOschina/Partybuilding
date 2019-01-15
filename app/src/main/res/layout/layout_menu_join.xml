@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_white_border"
+    android:orientation="vertical"
+    android:padding="15dp">
+
+    <TextView
+        android:id="@+id/applyBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:text="入党志愿书"
+        android:clickable="true"
+        android:drawableLeft="@drawable/ic_group"
+        android:drawablePadding="10dp"
+        android:paddingBottom="15dp"
+        android:textColor="@color/primaryTextColor"
+        android:textSize="@dimen/mediumTextSize" />
+
+    <TextView
+        android:id="@+id/reportBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:text="思想汇报"
+        android:clickable="true"
+        android:drawableLeft="@drawable/ic_mind_report"
+        android:drawablePadding="10dp"
+        android:textColor="@color/primaryTextColor"
+        android:textSize="@dimen/mediumTextSize" />
+
+</LinearLayout>

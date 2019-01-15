@@ -1,0 +1,42 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_layout" />
+
+    <TextView
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:text="提问信息"
+        android:textSize="@dimen/mediumTextSize"
+        android:textColor="@color/primaryTextColor"
+        android:background="@color/ddd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.huaneng.zhdj.view.TableView
+        android:id="@+id/questionTableView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:text="答复信息"
+        android:textSize="@dimen/mediumTextSize"
+        android:textColor="@color/primaryTextColor"
+        android:background="@color/ddd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.huaneng.zhdj.view.TableView
+        android:id="@+id/answerTableView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+</LinearLayout>

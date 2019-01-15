@@ -1,0 +1,136 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include layout="@layout/toolbar_layout" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:descendantFocusability="blocksDescendants"
+        android:fillViewport="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:descendantFocusability="blocksDescendants"
+            android:orientation="vertical">
+
+            <TextView
+                android:text="专题活动介绍："
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/gray_999"
+                android:padding="5dp"
+                android:background="@color/eee"
+                android:textSize="@dimen/smallTextSize" />
+
+            <com.huaneng.zhdj.view.NoScrollWebView
+                android:id="@+id/webView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="vertical"/>
+
+            <TextView
+                android:text="专题活动文章列表："
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/gray_999"
+                android:padding="5dp"
+                android:background="@color/eee"
+                android:textSize="@dimen/smallTextSize" />
+
+            <TextView
+                android:id="@+id/articleEmptyLabel"
+                android:layout_margin="20dp"
+                android:text="暂无数据"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/gray_999"
+                android:padding="15dp"
+                android:visibility="gone"
+                android:textSize="@dimen/smallTextSize" />
+
+            <com.huaneng.zhdj.view.NoScrollListView
+                android:id="@+id/articleLv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:background="@color/white"
+                android:divider="@color/lightest_gray"
+                android:dividerHeight="1px"
+                android:listSelector="@null"
+                android:scrollbars="none"/>
+
+            <TextView
+                android:text="专题活动文件列表："
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/gray_999"
+                android:padding="5dp"
+                android:visibility="gone"
+                android:background="@color/eee"
+                android:textSize="@dimen/smallTextSize" />
+
+            <TextView
+                android:id="@+id/fileEmptyLabel"
+                android:layout_margin="20dp"
+                android:text="暂无数据"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/gray_999"
+                android:padding="15dp"
+                android:visibility="gone"
+                android:textSize="@dimen/smallTextSize" />
+
+            <com.huaneng.zhdj.view.NoScrollListView
+                android:id="@+id/fileLv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:background="@color/white"
+                android:divider="@color/lightest_gray"
+                android:dividerHeight="1px"
+                android:listSelector="@null"
+                android:scrollbars="none"/>
+
+            <TextView
+                android:text="专题活动视频资料："
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/gray_999"
+                android:padding="5dp"
+                android:background="@color/eee"
+                android:textSize="@dimen/smallTextSize" />
+
+            <TextView
+                android:id="@+id/videoEmptyLabel"
+                android:layout_margin="20dp"
+                android:text="暂无数据"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/gray_999"
+                android:padding="15dp"
+                android:visibility="gone"
+                android:textSize="@dimen/smallTextSize" />
+
+            <com.huaneng.zhdj.view.NoScrollGridView
+                android:id="@+id/videoGv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:horizontalSpacing="10dp"
+                android:listSelector="@null"
+                android:divider="@color/lightest_gray"
+                android:numColumns="2"
+                android:visibility="gone"
+                android:layout_margin="10dp"
+                android:scrollbars="none"
+                android:verticalSpacing="10dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

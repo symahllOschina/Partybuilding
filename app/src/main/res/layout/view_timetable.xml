@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/seasonTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        tools:text="2017年第4季度"
+        android:textColor="@color/primaryTextColor"
+        android:textSize="@dimen/mediumTextSize"/>
+
+    <View
+        android:background="@color/ddd"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+    <com.huaneng.zhdj.view.NoScrollListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:divider="@color/ddd"
+        android:dividerHeight="1dp"
+        android:listSelector="@null"
+        android:scrollbars="none"/>
+    <View
+        android:background="@color/ddd"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <TextView
+        android:id="@+id/makerTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:layout_margin="10dp"
+        tools:text="制表人：韩孺子"
+        android:textColor="@color/primaryTextColor"
+        android:textSize="@dimen/mediumTextSize"/>
+
+    <TextView
+        android:id="@+id/timeTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        tools:text="制表时间：2017/09/20"
+        android:textColor="@color/primaryTextColor"
+        android:textSize="@dimen/mediumTextSize"/>
+
+</LinearLayout>

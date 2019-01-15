@@ -1,0 +1,156 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_bg"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_layout" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="姓名"
+            android:textColor="@color/primaryTextColor"
+            android:textSize="@dimen/mediumTextSize" />
+
+        <EditText
+            android:id="@+id/nameEt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:background="@drawable/shape_white_round_border"
+            android:padding="5dp"
+            android:textColor="@color/primaryTextColor"
+            android:textSize="@dimen/mediumTextSize"
+            tools:text="姓名" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="手机号"
+            android:textColor="@color/primaryTextColor"
+            android:textSize="@dimen/mediumTextSize" />
+
+        <EditText
+            android:id="@+id/phoneEt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:background="@drawable/shape_white_round_border"
+            android:padding="5dp"
+            android:inputType="phone"
+            android:digits="0123456789"
+            android:maxLength="11"
+            android:textColor="@color/primaryTextColor"
+            android:textSize="@dimen/mediumTextSize" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:layout_marginBottom="30dp"
+        android:text="注：姓名或手机号两者选填其一即可。"
+        android:textColor="@color/primaryTextColor"
+        android:textSize="@dimen/mediumTextSize" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="密保问题"
+            android:textColor="@color/primaryTextColor"
+            android:textSize="@dimen/mediumTextSize" />
+
+        <TextView
+            android:id="@+id/secretQuestionTv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:hint="请选择"
+            android:drawableRight="@drawable/ic_arrow_down"
+            android:background="@drawable/shape_white_round_border"
+            android:padding="5dp"
+            android:textColor="@color/primaryTextColor"
+            android:textSize="@dimen/mediumTextSize" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="密保答案"
+            android:textColor="@color/primaryTextColor"
+            android:textSize="@dimen/mediumTextSize" />
+
+        <EditText
+            android:id="@+id/secretAnswerEt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:background="@drawable/shape_white_round_border"
+            android:padding="5dp"
+            android:textColor="@color/primaryTextColor"
+            android:textSize="@dimen/mediumTextSize" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp"
+        android:padding="10dp">
+
+        <Button
+            android:id="@+id/submitBtn"
+            android:layout_marginRight="25dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="40dp"
+            android:background="@drawable/selector_btn_red"
+            android:onClick="submit"
+            android:text="提交修改"
+            android:textColor="@color/white"
+            android:textSize="@dimen/mediumTextSize" />
+
+        <Button
+            android:id="@+id/cancelBtn"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="40dp"
+            android:background="@drawable/selector_btn_white"
+            android:onClick="cancel"
+            android:text="放弃"
+            android:textColor="@color/gray_555"
+            android:textSize="@dimen/mediumTextSize" />
+    </LinearLayout>
+
+</LinearLayout>
